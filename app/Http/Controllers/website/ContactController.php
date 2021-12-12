@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Website;
+namespace App\Http\Controllers\website;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -13,7 +13,7 @@ class ContactController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        return view('Website.contact.index');
+        return view('website.contact.index');
     }
 
     /**

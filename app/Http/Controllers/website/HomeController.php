@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Website;
+namespace App\Http\Controllers\website;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -15,6 +15,6 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('Website.home.index');
+        return view('website.home.index');
     }
 }
