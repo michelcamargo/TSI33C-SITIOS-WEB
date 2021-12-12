@@ -1,3 +1,7 @@
+@extends('layouts.default')
+
+@section('view-content')
+
 Sobre nós
 
-<?php
+@endsection

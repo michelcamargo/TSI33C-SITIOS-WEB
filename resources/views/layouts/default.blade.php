@@ -17,15 +17,14 @@
 
     <body>
         <nav>
-
+            Headerrrr
         </nav>
 
-
+        {{-- Conteúdo da view--}}
         @yield('view-content')
 
-
         <footer class="main_footer">
-
+            foooooooter
         </footer>
 
 

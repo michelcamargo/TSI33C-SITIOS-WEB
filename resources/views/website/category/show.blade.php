@@ -1,3 +1,7 @@
+@extends('layouts.default')
+
+@section('view-content')
+
 página da categoria: {{$slug}}
 
-<?php
+@endsection
