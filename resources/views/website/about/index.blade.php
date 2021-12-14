@@ -2,6 +2,6 @@
 
 @section('view-content')
 
-Sobre nós
+    <h2>Sobre nós</h2>
 
 @endsection

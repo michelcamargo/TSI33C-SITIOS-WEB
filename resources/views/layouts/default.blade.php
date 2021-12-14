@@ -11,14 +11,51 @@
         <meta name="description" content="Projeto final referente à disciplina de Sítios Web 3 - Tecnologia em Sistemas para Internet - UTFPR. "/>
         <meta name="author" content="Michel Camargo" itemprop="MMPX"/>
 
+        <link rel="stylesheet" href="{{asset('css/main.css')}}">
+
         <link rel="shortcut icon" href="#" type="image/x-icon">
         <link rel="icon" href="#" type="image/x-icon">
     </head>
 
     <body>
-        <nav>
-            Headerrrr
-        </nav>
+    <header>
+        <div class="header-container">
+            <div class="main-logo-container">
+                <img src="#" alt="Main Logo" />
+            </div>
+            <nav class="header-nav-wrapper">
+                <ul class="header-nav-list">
+                    <li>
+                        <a href="{{route('www.home')}}">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('www.products')}}">
+                            Produtos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('www.blog')}}">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('www.about')}}">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('www.contact')}}">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
 
         {{-- Conteúdo da view--}}
         @yield('view-content')

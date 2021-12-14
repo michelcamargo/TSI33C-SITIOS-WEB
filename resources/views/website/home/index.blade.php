@@ -2,6 +2,6 @@
 
 @section('view-content')
 
-Conteúdo da tela inicial
+    <h2>Início</h2>
 
 @endsection

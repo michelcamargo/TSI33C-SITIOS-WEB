@@ -2,6 +2,6 @@
 
 @section('view-content')
 
-Página de blog
+    <h2>Blog</h2>
 
 @endsection
