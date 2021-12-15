@@ -1,7 +1,7 @@
 <?php
 
 /*TESTES INÍCIO PHP*/
-include("connection.php");
+//include("connection.php");
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;

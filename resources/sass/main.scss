@@ -1,9 +1,6 @@
-.teste {
-    .alou {
-        color: red;
-    }
-}
+@import "./header";
+@import "./variables";
 
-.header-container {
-    background: blue;
+.footer {
+    margin-top: 20rem;
 }
