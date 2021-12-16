@@ -14,7 +14,6 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-
         $products = Products::orderBy("id")->get();
         return view('website.products.index')->with('products', $products);
     }
@@ -22,6 +21,11 @@ class ProductController extends Controller
     public function view($id, Request $request) {
         $product = Products::find($id);
         return view('website.products.view')->with("product", $product);
+    }
+
+    public function editView($id, Request $request) {
+        $product = Products::find($id);
+        return view('website.products.edit')->with("product", $product);
     }
 
     public function productEdit($id, Request $request) {
@@ -35,6 +39,10 @@ class ProductController extends Controller
         $product->save();
 
         return view('website.products.view')->with("product", $product);
+    }
+
+    public function createView(Request $request) {
+        return view('website.products.create');
     }
 
     public function productCreate(Request $request) {

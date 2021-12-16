@@ -2,14 +2,24 @@
 
 @section('view-content')
 
-    <h2>Produto</h2>
+    <div class="product-view-content">
+        <div class="product-view-heading">
+            <h2 class="product-view-title">{{$product->name}}</h2>
+            <a class="product-view-edit-btn" href="{{route("www.produtos.editView", ["id" => $product->id])}}">Editar</a>
+        </div>
 
-    <form method="post">
-        @csrf
-        <input type="text" name="name" value="{{$product->name}}">
-        <input type="text" name="genre" value="{{$product->genre}}">
-        <input type="text" name="year" value="{{$product->year}}">
-        <input type="text" name="director" value="{{$product->director}}">
-        <button type="submit">Atualizar</button>
-    </form>
+        <h5>Diretor</h5>
+        <p>{{$product->director}}</p>
+
+        <h5>Gênero</h5>
+        <p>{{$product->genre}}</p>
+
+        <h5>Lançamento</h5>
+        <p>{{$product->year}}</p>
+    </div>
+
+
+
+
+
 @endsection
