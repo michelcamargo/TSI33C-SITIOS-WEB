@@ -11,7 +11,11 @@ header .header-container .header-nav-wrapper .header-nav-list {
 }
 
 .catalog-new-product-btn {
-  background: #F7F7F7 !important;
+  font-size: 12px !important;
+}
+
+.product-create-btn {
+  font-size: 14px !important;
 }
 
 .product-list {
@@ -28,7 +32,14 @@ header .header-container .header-nav-wrapper .header-nav-list {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
-.product-edit-form .product-input-label {
+.product-edit-form, .product-create-form {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  align-items: end;
+}
+.product-edit-form .product-input-label, .product-create-form .product-input-label {
   margin-bottom: 0;
 }
 

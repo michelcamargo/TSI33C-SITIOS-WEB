@@ -13,19 +13,19 @@
 
         <label>
             <h6 class="product-input-label">Gênero</h6>
-            <input class="product-input  product-genre-input" type="text" name="genre" value="gênero">
+            <input class="product-input product-genre-input" type="text" name="genre" value="gênero">
         </label>
 
         <label>
             <h6 class="product-input-label">Diretor</h6>
-            <input class="product-input  product-director-input" type="text" name="director" value="diretor">
+            <input class="product-input product-director-input" type="text" name="director" value="diretor">
         </label>
 
         <label>
             <h6 class="product-input-label">Lançamento</h6>
-            <input class="product-input  product-year-input" type="text" name="year" value="ano">
+            <input class="product-input product-year-input" type="number" name="year" value="1999" pattern="[0-9]{4}">
         </label>
 
-        <button type="submit">Criar</button>
+        <button class="btn btn-primary product-create-btn" type="submit">Criar</button>
     </form>
 @endsection

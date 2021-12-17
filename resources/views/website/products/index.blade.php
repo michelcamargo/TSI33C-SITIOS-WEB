@@ -4,7 +4,7 @@
 
     <h2>Catálogo</h2>
 
-    <a class="btn catalog-new-product-btn" href="{{route("www.produtos.createView")}}">NOVO +</a>
+    <a class="btn btn-primary catalog-new-product-btn" href="{{route("www.produtos.createView")}}">NOVO +</a>
 
     <table class="product-list">
         <thead>
@@ -27,6 +27,7 @@
                     <td class="product-actions">
                         <a href="{{route("www.produtos.view", ["id" => $product->id])}}">view</a>
                         <a href="{{route("www.produtos.editView", ["id" => $product->id])}}">edit</a>
+                        <a href="{{route("www.produtos.remove", ["id" => $product->id])}}">delete</a>
                     </td>
                 </tr>
             @endforeach

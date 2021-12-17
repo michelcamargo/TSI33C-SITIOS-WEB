@@ -2,7 +2,12 @@
 @import "./variables";
 
 .catalog-new-product-btn {
-    background: #F7F7F7 !important;
+    //background: #F7F7F7 !important;
+    font-size: 12px !important;
+}
+
+.product-create-btn {
+    font-size: 14px !important;
 }
 
 .product-list {
@@ -28,7 +33,12 @@
     }
 }
 
-.product-edit-form {
+.product-edit-form, .product-create-form {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: end;
+
     .product-input-label {
         margin-bottom: 0;
     }
