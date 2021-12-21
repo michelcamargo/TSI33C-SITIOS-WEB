@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 
 mix.js('resources/js/app.js', 'public/js');
-mix.sass('resources/sass/_index.scss', 'public/css');
+mix.sass('resources/sass/_index.scss', 'public/css/main.css');
 
 // var stylesRootDirectory = './resources/sass/';
 // var stylesRootOutput = 'public/css/';
