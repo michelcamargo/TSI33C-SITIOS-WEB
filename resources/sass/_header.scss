@@ -9,7 +9,7 @@ header {
             .header__navList {
                 display: flex;
                 flex-direction: row;
-                column-gap: $spacing-medium;
+                column-gap: $spacing__medium;
 
                 list-style: none;
             }

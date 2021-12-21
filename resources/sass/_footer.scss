@@ -1,8 +1,47 @@
 @import "var";
 
 /*region footer ***************************/
-.footer {
-    margin-top: $spacing-largest;
-    background: #F7F7F7;
+.footer__wrapper {
+    margin-top: $spacing__largest;
+    background: $color__background--primary;
+
+    .footer__container {
+        .footer__content {
+            padding-top: $spacing__medium;
+            padding-bottom: $spacing__medium;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .footer__menuContainer {
+                list-style: none;
+                padding-left: 0;
+
+                .footer__menuTitle {}
+                .footer__menuItem {
+                    .footer__menuLink {}
+                }
+            }
+
+            .footer__menuLink {
+                text-decoration: none;
+                font-size: $font__size--small;
+
+                opacity: .7;
+                transition: $transition--ease;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            .footer__disclaimer {
+                font-size: $font__size--smaller;
+                max-width: 300px;
+            }
+        }
+    }
+
 }
 /*endregion footer ************************/

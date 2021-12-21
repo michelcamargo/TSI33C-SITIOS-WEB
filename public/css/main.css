@@ -2,7 +2,7 @@
   font-size: 12px !important;
 }
 
-.c-productCreate__inputRelease {
+.c-productCreate__submitButton {
   font-size: 14px !important;
 }
 
@@ -10,13 +10,13 @@
 .catalog__productTable {
   width: 100%;
 }
-.catalog__productTable .product-row:nth-child(even) {
+.catalog__productTable .catalog__productTableItem:nth-child(even) {
   background: #F7F7F7;
 }
 
 /*endregion Listagem de produtos ************************/
 /*region PRODUCT VIEW */
-.product-view-content .product-view-heading {
+.c-product__contentContainer .c-product__headingContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,34 +25,54 @@
 }
 /*endregion PRODUCT VIEW ************************/
 /*region PRODUCT EDIT ************************/
-.product-edit-form, .product-create-form {
+.c-productEdit__form, .c-productCreate__form {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
   align-items: end;
 }
-.product-edit-form .product-input-label, .product-create-form .product-input-label {
+.c-productEdit__form .c-productEdit__label, .c-productEdit__form .c-productCreate__label, .c-productCreate__form .c-productEdit__label, .c-productCreate__form .c-productCreate__label {
   margin-bottom: 0;
 }
 
 /*endregion PRODUCT EDIT ************************/
-.teste {
-  color: red;
-}
-
 /*region footer ***************************/
-.footer {
-  margin-top: 3rem;
+.footer__wrapper {
+  margin-top: 4rem;
   background: #F7F7F7;
+}
+.footer__wrapper .footer__container .footer__content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__wrapper .footer__container .footer__content .footer__menuContainer {
+  list-style: none;
+  padding-left: 0;
+}
+.footer__wrapper .footer__container .footer__content .footer__menuLink {
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+.footer__wrapper .footer__container .footer__content .footer__menuLink:hover {
+  opacity: 1;
+}
+.footer__wrapper .footer__container .footer__content .footer__disclaimer {
+  font-size: 12px;
+  max-width: 300px;
 }
 
 /*endregion footer ************************/
-header .header-container {
+header .header__container {
   display: flex;
   justify-content: space-between;
 }
-header .header-container .header-nav-wrapper .header-nav-list {
+header .header__container .header__navWrapper .header__navList {
   display: flex;
   flex-direction: row;
   -moz-column-gap: 1rem;

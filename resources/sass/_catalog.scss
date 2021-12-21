@@ -1,10 +1,10 @@
 @import "var";
 
 .catalog__newProductButton {
-    font-size: $font-size-smaller !important;
+    font-size: $font__size--smaller !important;
 }
 .c-productCreate__submitButton {
-    font-size: $font-size-small !important;
+    font-size: $font__size--small !important;
 }
 
 /*region Listagem de produtos ***************************/
@@ -13,7 +13,7 @@
 
     .catalog__productTableItem {
         &:nth-child(even) {
-            background: $color-background-primary;
+            background: $color__background--primary;
         }
     }
 }
@@ -25,7 +25,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        column-gap: $spacing-medium;
+        column-gap: $spacing__medium;
 
         .c-product__propertyName {}
 
@@ -39,7 +39,7 @@
 .c-productEdit__form, .c-productCreate__form {
     display: flex;
     flex-direction: row;
-    column-gap: $spacing-medium;
+    column-gap: $spacing__medium;
     align-items: end;
 
     .c-productEdit__label, .c-productCreate__label {

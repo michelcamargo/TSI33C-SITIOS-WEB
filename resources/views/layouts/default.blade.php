@@ -11,6 +11,7 @@
         <meta name="description" content="Projeto final referente à disciplina de Sítios Web 3 - Tecnologia em Sistemas para Internet - UTFPR. "/>
         <meta name="author" content="Michel Camargo" itemprop="MMPX"/>
 
+        <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
 
         <link rel="shortcut icon" href="#" type="image/x-icon">
@@ -62,22 +63,24 @@
         @yield('view-content')
     </div>
 
-    <footer class="footer">
-        <div class="container footer-container">
-            <ul class="footer__menuContainer">
-                <h6 class="footer__menuTitle">PeakyBuster</h6>
-                <a class="footer__menuItem" href="#">Equipe</a>
-                <a class="footer__menuItem" href="#">Referências</a>
-                <a class="footer__menuItem" href="#">Instituição de ensino</a>
-                <a class="footer__menuItem" href="#">Política de privacidade</a>
-            </ul>
+    <footer class="footer__wrapper">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <ul class="footer__menuContainer">
+                    <h6 class="footer__menuTitle">PeakyBuster</h6>
+                    <li class="footer__menuItem"><a class="footer__menuLink" href="#">Equipe</a></li>
+                    <li class="footer__menuItem"><a class="footer__menuLink" href="#">Referências</a></li>
+                    <li class="footer__menuItem"><a class="footer__menuLink" href="#">Instituição de ensino</a></li>
+                    <li class="footer__menuItem"><a class="footer__menuLink" href="#">Política de privacidade</a></li>
+                </ul>
 
-            <div class="footer__menuContainer">
-                <a class="footer__socialItem" href="#">Facebook</a>
-                <a class="footer__socialItem" href="#">Instagram</a>
-                <a class="footer__socialItem" href="#">Youtube</a>
-                <a class="footer__socialItem" href="#">Github</a>
-                <p class="footer__disclaimer">Disclaimer grandão</p>
+                <div class="footer__menuContainer">
+                    <a class="footer__menuLink" href="#">Facebook</a>
+                    <a class="footer__menuLink" href="#">Instagram</a>
+                    <a class="footer__menuLink" href="#">Youtube</a>
+                    <a class="footer__menuLink" href="#">Github</a>
+                    <p class="footer__disclaimer">2022 - Direitos reservados.<br>Aplicação Web de cunho educacional e acadêmico, isento de qualquer intuito comercial. Tecnologia em Sistemas para Internet - Universidade Tecnológica Federal do Paraná</p>
+                </div>
             </div>
         </div>
     </footer>
