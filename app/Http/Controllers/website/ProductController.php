@@ -95,7 +95,7 @@ class ProductController extends Controller
     }
 
     public function productRemove($id, Request $request) {
-        Products::get('id', $id)->delete();
+        Products::where('id', $id)->delete();
 
         return view('website.products.index');
     }

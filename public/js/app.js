@@ -3895,7 +3895,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
       'variable': '',
 
       /**
-       * Used to import variables into the compiled template.
+       * Used to import var into the compiled template.
        *
        * @memberOf _.templateSettings
        * @type {Object}
@@ -16839,7 +16839,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * Creates a compiled template function that can interpolate data properties
      * in "interpolate" delimiters, HTML-escape interpolated data properties in
      * "escape" delimiters, and execute JavaScript in "evaluate" delimiters. Data
-     * properties may be accessed as free variables in the template. If a setting
+     * properties may be accessed as free var in the template. If a setting
      * object is given, it takes precedence over `_.templateSettings` values.
      *
      * **Note:** In the development build `_.template` utilizes
@@ -16863,7 +16863,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
      * @param {RegExp} [options.evaluate=_.templateSettings.evaluate]
      *  The "evaluate" delimiter.
      * @param {Object} [options.imports=_.templateSettings.imports]
-     *  An object to import into the template as free variables.
+     *  An object to import into the template as free var.
      * @param {RegExp} [options.interpolate=_.templateSettings.interpolate]
      *  The "interpolate" delimiter.
      * @param {string} [options.sourceURL='lodash.templateSources[n]']
@@ -19307,10 +19307,62 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/sass/variables/index.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/var/_catalog.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/variables/spacing.scss":
+/*!***********************************************!*\
+  !*** ./resources/sass/var/_spacing.scss ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/catalog/index.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/catalog/_catalog.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/category/index.scss":
 /*!********************************************!*\
-  !*** ./resources/sass/category/index.scss ***!
+  !*** ./resources/sass/category/_catalog.scss ***!
   \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/footer/index.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/footer/_catalog.scss ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19322,7 +19374,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./resources/sass/header/index.scss":
 /*!******************************************!*\
-  !*** ./resources/sass/header/index.scss ***!
+  !*** ./resources/sass/header/_catalog.scss ***!
   \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -19335,21 +19387,8 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./resources/sass/main.scss":
 /*!**********************************!*\
-  !*** ./resources/sass/main.scss ***!
+  !*** ./resources/sass/_index.scss ***!
   \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./resources/sass/variables/index.scss":
-/*!*********************************************!*\
-  !*** ./resources/sass/variables/index.scss ***!
-  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19568,7 +19607,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -19582,20 +19621,20 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -19628,7 +19667,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -19640,12 +19679,12 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			}
 /******/ 		})();
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -19656,7 +19695,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
@@ -19665,34 +19704,37 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			return module;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/variables/index": 0,
 /******/ 			"css/main": 0,
 /******/ 			"css/header/index": 0,
-/******/ 			"css/category/index": 0
+/******/ 			"css/footer/index": 0,
+/******/ 			"css/category/index": 0,
+/******/ 			"css/catalog/index": 0,
+/******/ 			"css/variables/spacing": 0,
+/******/ 			"css/variables/index": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -19717,23 +19759,26 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/ 		
+/******/
 /******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/variables/index","css/main","css/header/index","css/category/index"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/variables/index","css/main","css/header/index","css/category/index"], () => (__webpack_require__("./resources/sass/category/index.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/variables/index","css/main","css/header/index","css/category/index"], () => (__webpack_require__("./resources/sass/header/index.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/variables/index","css/main","css/header/index","css/category/index"], () => (__webpack_require__("./resources/sass/main.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/variables/index","css/main","css/header/index","css/category/index"], () => (__webpack_require__("./resources/sass/variables/index.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/header/index","css/footer/index","css/category/index","css/catalog/index","css/variables/spacing","css/variables/index"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/header/index","css/footer/index","css/category/index","css/catalog/index","css/variables/spacing","css/variables/index"], () => (__webpack_require__("./resources/sass/catalog/index.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/header/index","css/footer/index","css/category/index","css/catalog/index","css/variables/spacing","css/variables/index"], () => (__webpack_require__("./resources/sass/category/index.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/header/index","css/footer/index","css/category/index","css/catalog/index","css/variables/spacing","css/variables/index"], () => (__webpack_require__("./resources/sass/footer/index.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/header/index","css/footer/index","css/category/index","css/catalog/index","css/variables/spacing","css/variables/index"], () => (__webpack_require__("./resources/sass/header/index.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/header/index","css/footer/index","css/category/index","css/catalog/index","css/variables/spacing","css/variables/index"], () => (__webpack_require__("./resources/sass/main.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/main","css/header/index","css/footer/index","css/category/index","css/catalog/index","css/variables/spacing","css/variables/index"], () => (__webpack_require__("./resources/sass/variables/index.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/main","css/header/index","css/footer/index","css/category/index","css/catalog/index","css/variables/spacing","css/variables/index"], () => (__webpack_require__("./resources/sass/variables/spacing.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+/******/
 /******/ })()
 ;

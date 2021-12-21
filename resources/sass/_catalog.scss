@@ -1,31 +1,31 @@
-@import "./header";
-@import "./variables";
+@import "var";
 
 .catalog-new-product-btn {
-    //background: #F7F7F7 !important;
-    font-size: 12px !important;
+    font-size: $font-size-smaller !important;
 }
-
 .product-create-btn {
-    font-size: 14px !important;
+    font-size: $font-size-small !important;
 }
 
+/*region Listagem de produtos ***************************/
 .product-list {
     width: 100%;
 
     .product-row {
         &:nth-child(even) {
-            background: #F7F7F7;
+            background: $color-background-primary;
         }
     }
 }
+/*endregion Listagem de produtos ************************/
 
+/*region PRODUCT VIEW */
 .product-view-content {
     .product-view-heading {
         display: flex;
         flex-direction: row;
         align-items: center;
-        column-gap: 1rem;
+        column-gap: $spacing-medium;
 
         .product-view-title {}
 
@@ -33,18 +33,17 @@
     }
 }
 
+/*endregion PRODUCT VIEW ************************/
+
+/*region PRODUCT EDIT ************************/
 .product-edit-form, .product-create-form {
     display: flex;
     flex-direction: row;
-    column-gap: 1rem;
+    column-gap: $spacing-medium;
     align-items: end;
 
     .product-input-label {
         margin-bottom: 0;
     }
 }
-
-.footer {
-    margin-top: 20rem;
-    background: #F7F7F7;
-}
+/*endregion PRODUCT EDIT ************************/
