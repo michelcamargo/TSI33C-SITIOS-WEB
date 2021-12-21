@@ -1,16 +1,16 @@
-.catalog-new-product-btn {
+.catalog__newProductButton {
   font-size: 12px !important;
 }
 
-.product-create-btn {
+.c-productCreate__inputRelease {
   font-size: 14px !important;
 }
 
 /*region Listagem de produtos ***************************/
-.product-list {
+.catalog__productTable {
   width: 100%;
 }
-.product-list .product-row:nth-child(even) {
+.catalog__productTable .product-row:nth-child(even) {
   background: #F7F7F7;
 }
 

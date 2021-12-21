@@ -2,6 +2,6 @@
 
 @section('view-content')
 
-    <h2>Início</h2>
+    <h2 class="c-home__heading">Início</h2>
 
 @endsection

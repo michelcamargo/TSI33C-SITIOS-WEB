@@ -1,12 +1,12 @@
 @import "var";
 
 header {
-    .header-container {
+    .header__container {
         display: flex;
         justify-content: space-between;
 
-        .header-nav-wrapper {
-            .header-nav-list {
+        .header__navWrapper {
+            .header__navList {
                 display: flex;
                 flex-direction: row;
                 column-gap: $spacing-medium;

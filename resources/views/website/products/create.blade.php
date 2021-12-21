@@ -2,30 +2,30 @@
 
 @section('view-content')
 
-    <h2 class="product-create-title">Adicionar ao catálogo</h2>
+    <h2 class="c-productEdit__heading">Adicionar ao catálogo</h2>
 
-    <form class="product-create-form" method="post">
+    <form class="c-productCreate__form" method="post">
         @csrf
         <label>
-            <h6 class="product-input-label">Filme</h6>
-            <input class="product-input product-name-input" type="text" name="name" value="filme">
+            <h6 class="c-productCreate__label c-productCreate__labelName">Filme</h6>
+            <input class="c-productCreate__input c-productCreate__inputName" type="text" name="name" value="{{$product->name}}">
         </label>
 
         <label>
-            <h6 class="product-input-label">Gênero</h6>
-            <input class="product-input product-genre-input" type="text" name="genre" value="gênero">
+            <h6 class="c-productCreate__label c-productCreate__labelGenre">Gênero</h6>
+            <input class="c-productCreate__input c-productCreate__inputGenre" type="text" name="genre" value="{{$product->genre}}">
         </label>
 
         <label>
-            <h6 class="product-input-label">Diretor</h6>
-            <input class="product-input product-director-input" type="text" name="director" value="diretor">
+            <h6 class="c-productCreate__label c-productCreate__labelDirector">Diretor</h6>
+            <input class="c-productCreate__input c-productCreate__inputDirector" type="text" name="director" value="{{$product->director}}">
         </label>
 
         <label>
-            <h6 class="product-input-label">Lançamento</h6>
-            <input class="product-input product-year-input" type="number" name="year" value="1999" pattern="[0-9]{4}">
+            <h6 class="c-productCreate__label c-productCreate__labelRelease">Lançamento</h6>
+            <input class="c-productCreate__input c-productCreate__inputRelease" type="text" name="year" value="{{$product->year}}">
         </label>
 
-        <button class="btn btn-primary product-create-btn" type="submit">Criar</button>
+        <button class="btn btn-primary c-productCreate__submitButton" type="submit">Criar</button>
     </form>
 @endsection

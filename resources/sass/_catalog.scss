@@ -1,17 +1,17 @@
 @import "var";
 
-.catalog-new-product-btn {
+.catalog__newProductButton {
     font-size: $font-size-smaller !important;
 }
-.product-create-btn {
+.c-productCreate__submitButton {
     font-size: $font-size-small !important;
 }
 
 /*region Listagem de produtos ***************************/
-.product-list {
+.catalog__productTable {
     width: 100%;
 
-    .product-row {
+    .catalog__productTableItem {
         &:nth-child(even) {
             background: $color-background-primary;
         }
@@ -20,29 +20,29 @@
 /*endregion Listagem de produtos ************************/
 
 /*region PRODUCT VIEW */
-.product-view-content {
-    .product-view-heading {
+.c-product__contentContainer {
+    .c-product__headingContainer {
         display: flex;
         flex-direction: row;
         align-items: center;
         column-gap: $spacing-medium;
 
-        .product-view-title {}
+        .c-product__propertyName {}
 
-        .product-view-edit-btn {}
+        .c-product__editButton {}
     }
 }
 
 /*endregion PRODUCT VIEW ************************/
 
 /*region PRODUCT EDIT ************************/
-.product-edit-form, .product-create-form {
+.c-productEdit__form, .c-productCreate__form {
     display: flex;
     flex-direction: row;
     column-gap: $spacing-medium;
     align-items: end;
 
-    .product-input-label {
+    .c-productEdit__label, .c-productCreate__label {
         margin-bottom: 0;
     }
 }
