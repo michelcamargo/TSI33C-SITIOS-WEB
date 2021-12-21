@@ -1,18 +1,42 @@
 @import "var";
 
-header {
+/*region HEADER*/
+.header__wrapper {
+    padding-top: $spacing__medium;
+    padding-bottom: $spacing__medium;
+    background: $color__background--secondary;
+
     .header__container {
-        display: flex;
-        justify-content: space-between;
+        .header__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-        .header__navWrapper {
-            .header__navList {
-                display: flex;
-                flex-direction: row;
-                column-gap: $spacing__medium;
+            .header__navWrapper {
+                .header__navList {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 0;
+                    padding-left: 0;
+                    column-gap: $spacing__medium;
 
-                list-style: none;
+                    list-style: none;
+
+                    .header__navItem {
+                        .header__navAnchor {
+                            text-decoration: none;
+
+                            transition: $transition__ease;
+                            opacity: .75;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
+/*endregion HEADER*/

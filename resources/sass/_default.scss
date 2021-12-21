@@ -1,3 +1,11 @@
 @import "var";
 
-.c__container {}
+/*region DEFAULT ******************************/
+.body__wrapper {
+    background: $color__background--primary;
+
+    .body__container {
+
+    }
+}
+/*endregion DEFAULT ******************************/

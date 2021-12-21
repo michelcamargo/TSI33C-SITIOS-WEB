@@ -1,49 +1,35 @@
 @import "var";
 
+/*region CATÁLOGO ***************************/
+.catalog__heading {
+    color: $color__text--primary;
+}
+
 .catalog__newProductButton {
     font-size: $font__size--smaller !important;
 }
-.c-productCreate__submitButton {
-    font-size: $font__size--small !important;
-}
 
-/*region Listagem de produtos ***************************/
 .catalog__productTable {
     width: 100%;
 
-    .catalog__productTableItem {
-        &:nth-child(even) {
-            background: $color__background--primary;
+    .catalog__productTableHead {
+        .catalog__productTableHeader {
+            .catalog__productTableHeading {
+                color: $color__text--primary;
+            }
+        }
+    }
+
+    .catalog__productTableBody {
+        .catalog__productTableItem {
+            &:nth-child(even) {
+                background: $color__background--secondary;
+            }
+
+            .catalog__productTableValue {
+                color: $color__text--secondary;
+            }
         }
     }
 }
-/*endregion Listagem de produtos ************************/
-
-/*region PRODUCT VIEW */
-.c-product__contentContainer {
-    .c-product__headingContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        column-gap: $spacing__medium;
-
-        .c-product__propertyName {}
-
-        .c-product__editButton {}
-    }
-}
-
-/*endregion PRODUCT VIEW ************************/
-
-/*region PRODUCT EDIT ************************/
-.c-productEdit__form, .c-productCreate__form {
-    display: flex;
-    flex-direction: row;
-    column-gap: $spacing__medium;
-    align-items: end;
-
-    .c-productEdit__label, .c-productCreate__label {
-        margin-bottom: 0;
-    }
-}
-/*endregion PRODUCT EDIT ************************/
+/*endregion CATÁLOGO ************************/

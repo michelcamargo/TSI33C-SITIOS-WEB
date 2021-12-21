@@ -23,45 +23,50 @@
     <body>
     <header class="header__wrapper">
         <div class="container header__container">
-            <div class="header__logoContainer">
-                <img class="header__logoElement" src="./public/assets/svg/header/logo-peaky-buster.svg" alt="Main Logo" />
+            <div class="header__content">
+                <div class="header__logoContainer">
+                    <img class="header__logoElement" src="./public/assets/svg/header/logo-peaky-buster.svg" alt="Main Logo" />
+                </div>
+                <nav class="header__navWrapper">
+                    <ul class="header__navList">
+                        <li class="header__navItem">
+                            <a class="header__navAnchor" href="{{route('www.home')}}">
+                                Início
+                            </a>
+                        </li>
+                        <li class="header__navItem">
+                            <a class="header__navAnchor" href="{{route('www.produtos')}}">
+                                Produtos
+                            </a>
+                        </li>
+                        <li class="header__navItem">
+                            <a class="header__navAnchor" href="{{route('www.blog')}}">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="header__navItem">
+                            <a class="header__navAnchor" href="{{route('www.about')}}">
+                                Sobre
+                            </a>
+                        </li>
+                        <li class="header__navItem">
+                            <a class="header__navAnchor" href="{{route('www.contact')}}">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header__navWrapper">
-                <ul class="header__navList">
-                    <li class="header__navItem">
-                        <a class="header__navAnchor" href="{{route('www.home')}}">
-                            Início
-                        </a>
-                    </li>
-                    <li class="header__navItem">
-                        <a class="header__navAnchor" href="{{route('www.produtos')}}">
-                            Produtos
-                        </a>
-                    </li>
-                    <li class="header__navItem">
-                        <a class="header__navAnchor" href="{{route('www.blog')}}">
-                            Blog
-                        </a>
-                    </li>
-                    <li class="header__navItem">
-                        <a class="header__navAnchor" href="{{route('www.about')}}">
-                            Sobre
-                        </a>
-                    </li>
-                    <li class="header__navItem">
-                        <a class="header__navAnchor" href="{{route('www.contact')}}">
-                            Contato
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <div class="container c__container">
-        {{-- Conteúdo da view--}}
-        @yield('view-content')
+    <div class="body__wrapper">
+        <div class="container body__container">
+            {{-- Conteúdo da view--}}
+            @yield('view-content')
+        </div>
     </div>
+
 
     <footer class="footer__wrapper">
         <div class="footer__container container">
