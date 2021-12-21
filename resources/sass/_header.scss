@@ -25,6 +25,7 @@
                     .header__navItem {
                         .header__navAnchor {
                             text-decoration: none;
+                            color: $color__text--primary;
 
                             transition: $transition__ease;
                             opacity: .75;

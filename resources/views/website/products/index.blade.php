@@ -2,9 +2,11 @@
 
 @section('view-content')
 
-    <h2 class="catalog__heading">Catálogo</h2>
+    <div class="catalog__heading">
+        <h2 class="catalog__headingTitle">Catálogo</h2>
+        <a class="btn btn-primary catalog__newProductButton" href="{{route("www.produtos.createView")}}">NOVO +</a>
+    </div>
 
-    <a class="btn btn-primary catalog__newProductButton" href="{{route("www.produtos.createView")}}">NOVO +</a>
 
     <table class="catalog__productTable">
         <thead class="catalog__productTableHead">

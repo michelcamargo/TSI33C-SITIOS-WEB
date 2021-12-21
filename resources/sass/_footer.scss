@@ -2,8 +2,7 @@
 
 /*region FOOTER ***************************/
 .footer__wrapper {
-    margin-top: $spacing__largest;
-    background: $color__background--primary;
+    background: $color__background--secondary;
 
     .footer__container {
         .footer__content {
@@ -18,7 +17,10 @@
                 list-style: none;
                 padding-left: 0;
 
-                .footer__menuTitle {}
+                .footer__menuTitle {
+                    color: $color__text--primary;
+                    font-size: $font__size--large;
+                }
                 .footer__menuItem {
                     .footer__menuLink {}
                 }
@@ -27,6 +29,7 @@
             .footer__menuLink {
                 text-decoration: none;
                 font-size: $font__size--small;
+                color: $color__text--primary;
 
                 opacity: .7;
                 transition: $transition--ease;
@@ -37,6 +40,7 @@
             }
 
             .footer__disclaimer {
+                color: $color__text--secondary;
                 font-size: $font__size--smaller;
                 max-width: 300px;
             }

@@ -2,20 +2,43 @@
 
 /*region CATÁLOGO ***************************/
 .catalog__heading {
-    color: $color__text--primary;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: $spacing__medium;
+    margin-bottom: $spacing__medium;
+
+    .catalog__headingTitle {
+        color: $color__text--primary;
+        margin-bottom: 0;
+    }
+
+    .catalog__newProductButton {
+        align-items: center;
+        height: fit-content;
+        font-size: $font__size--smaller !important;
+
+        margin-top: $spacing__small;
+    }
 }
 
-.catalog__newProductButton {
-    font-size: $font__size--smaller !important;
-}
+
 
 .catalog__productTable {
     width: 100%;
 
     .catalog__productTableHead {
+        background: $color__background--secondary;
+
         .catalog__productTableHeader {
             .catalog__productTableHeading {
+                padding-top: $spacing__small;
+                padding-bottom: $spacing__small;
                 color: $color__text--primary;
+
+                &:first-child {
+                    padding-left: $spacing__small;
+                }
             }
         }
     }
@@ -28,6 +51,10 @@
 
             .catalog__productTableValue {
                 color: $color__text--secondary;
+
+                &:first-child {
+                    padding-left: $spacing__small;
+                }
             }
         }
     }
