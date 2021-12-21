@@ -3,7 +3,9 @@
 /*region DEFAULT ******************************/
 .body__wrapper {
     background: $color__background--primary;
-    padding-bottom: 22rem;
+    padding-top: $spacing__large;
+    padding-bottom: 20rem;
+
     .body__container {
 
     }

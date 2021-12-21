@@ -25,7 +25,9 @@
         <div class="container header__container">
             <div class="header__content">
                 <div class="header__logoContainer">
-                    <img class="header__logoElement" src="./public/assets/svg/header/logo-peaky-buster.svg" alt="Main Logo" />
+                    <a class="header__logoAnchor" href="#">
+                        <img class="header__logoElement" src="./public/assets/svg/header/logo-peaky-buster.svg" alt="Main Logo" />
+                    </a>
                 </div>
                 <nav class="header__navWrapper">
                     <ul class="header__navList">

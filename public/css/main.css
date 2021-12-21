@@ -49,7 +49,8 @@
 /*region DEFAULT ******************************/
 .body__wrapper {
   background: #292929;
-  padding-bottom: 22rem;
+  padding-top: 2rem;
+  padding-bottom: 20rem;
 }
 /*endregion DEFAULT ******************************/
 /*region FOOTER ***************************/
@@ -117,8 +118,11 @@
 .header__wrapper .header__container .header__content .header__navWrapper .header__navList .header__navItem .header__navAnchor:hover {
   opacity: 1;
 }
-
 /*endregion HEADER*/
+.c-home__heading {
+  color: #F8F8F8;
+}
+
 /*region PRODUCT CREATE *************************************/
 .c-productCreate__submitButton {
   font-size: 14px !important;
@@ -126,6 +130,10 @@
 
 /*endregion PRODUCT CREATE *************************************/
 /*region PRODUCT EDIT ************************/
+.c-productEdit__heading {
+  color: #F8F8F8;
+}
+
 .c-productEdit__form, .c-productCreate__form {
   display: flex;
   flex-direction: row;
@@ -134,7 +142,15 @@
   align-items: end;
 }
 .c-productEdit__form .c-productEdit__label, .c-productEdit__form .c-productCreate__label, .c-productCreate__form .c-productEdit__label, .c-productCreate__form .c-productCreate__label {
-  margin-bottom: 0;
+  color: #EFEFEF;
+  margin-bottom: 0.5rem;
+}
+.c-productEdit__form .c-productEdit__input, .c-productEdit__form .c-productCreate__input, .c-productCreate__form .c-productEdit__input, .c-productCreate__form .c-productCreate__input {
+  background: #232323;
+  color: #F8F8F8;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
 }
 
 /*endregion PRODUCT EDIT ************************/
@@ -146,4 +162,14 @@
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
+.c-product__contentContainer .c-product__headingContainer .c-product__propertyName {
+  color: #F8F8F8;
+}
+.c-product__contentContainer .c-product__propertyName {
+  color: #F8F8F8;
+}
+.c-product__contentContainer .c-product__propertyValue {
+  color: #EFEFEF;
+}
+
 /*endregion PRODUCT VIEW *************************************/

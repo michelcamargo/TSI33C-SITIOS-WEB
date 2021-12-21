@@ -7,6 +7,10 @@
 /*endregion PRODUCT CREATE *************************************/
 
 /*region PRODUCT EDIT ************************/
+.c-productEdit__heading {
+    color: $color__text--primary;
+}
+
 .c-productEdit__form, .c-productCreate__form {
     display: flex;
     flex-direction: row;
@@ -14,7 +18,16 @@
     align-items: end;
 
     .c-productEdit__label, .c-productCreate__label {
-        margin-bottom: 0;
+        color: $color__text--secondary;
+        margin-bottom: $spacing__small;
+    }
+
+    .c-productEdit__input, .c-productCreate__input {
+        background: $color__background--secondary;
+        color: $color__text--primary;
+        padding: $spacing__small $spacing__medium;
+        border: none;
+        border-radius: $border__radius--medium;
     }
 }
 /*endregion PRODUCT EDIT ************************/
@@ -27,9 +40,19 @@
         align-items: center;
         column-gap: $spacing__medium;
 
-        .c-product__propertyName {}
+        .c-product__propertyName {
+            color: $color__text--primary;
+        }
 
         .c-product__editButton {}
+    }
+
+    .c-product__propertyName {
+        color: $color__text--primary;
+    }
+
+    .c-product__propertyValue {
+        color: $color__text--secondary;
     }
 }
 /*endregion PRODUCT VIEW *************************************/
